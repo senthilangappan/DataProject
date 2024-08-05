@@ -10,7 +10,7 @@ load_dotenv()
 
 client = OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="",
+    #api_key="",
 )
 
 def chat_gpt(prompt):
