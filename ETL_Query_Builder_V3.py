@@ -3,14 +3,17 @@ import streamlit as st
 from openai import OpenAI
 import os
 
+# Load your API key from an environment variable
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
 
 client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    #api_key="",
+    defaults to os.environ.get("OPENAI_API_KEY")
 )
 
 def chat_gpt(prompt):
