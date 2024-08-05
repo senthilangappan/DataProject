@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = OpenAI(
-    defaults to os.environ.get("OPENAI_API_KEY")
+    defaults to os.environ.get("OPENAI_API_KEY"),
 )
 
 def chat_gpt(prompt):
