@@ -57,6 +57,7 @@ else:
         st.write("ETL Mapping Document:")
         st.dataframe(etl_mapping_df)
 
+
     if st.button("Generate Validation SQL"):
         with st.spinner("Generating SQL..."):
             prompt_template_path = os.path.join(os.path.dirname(__file__), 'prompt_template.txt')
