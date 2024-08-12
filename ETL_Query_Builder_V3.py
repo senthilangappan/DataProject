@@ -4,7 +4,9 @@ from openai import OpenAI
 import os
 
 # Load your API key from an environment variable
-api_key = os.environ.get("OPENAI_API_KEY")
+#api_key = os.environ.get("OPENAI_API_KEY")
+api_key=st.secrets["OPENAI_API_KEY"]
+
 
 if not api_key:
     st.error("API key not found. Please set the OPENAI_API_KEY environment variable.")
