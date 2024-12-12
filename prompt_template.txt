@@ -6,11 +6,11 @@ Examples for you to understand:
 1. Record Counts Validation:
 ```sql
 -- Validate record counts in source and target tables
-SELECT 'GLOC_ING_ADDRESS_IND_STG' AS source_table, COUNT(*) AS total_records
-FROM GLOC_ING_ADDRESS_IND_STG;
+SELECT 'Customers' AS source_table, COUNT(*) AS total_records
+FROM Customers;
 
-SELECT 'GLOC_ING_ADDRESS_IND_DWH' AS target_table, COUNT(*) AS total_records
-FROM GLOC_ING_ADDRESS_IND_DWH;
+SELECT 'DimCustomer' AS target_table, COUNT(*) AS total_records
+FROM DimCustomer;
 ```
 
 2. Data Integrity Checks:
